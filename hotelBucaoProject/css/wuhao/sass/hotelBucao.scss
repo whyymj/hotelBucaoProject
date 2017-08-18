@@ -205,11 +205,16 @@ body {
             width: 100%;
             padding: 0.31rem;
             li {
+                cursor: pointer;
                 float: left;
                 font-size: 0.14rem;
                 color: #8d6f4a;
                 margin: 0 0.32rem 0.20rem 0;
                 padding: 0.03rem 0.07rem;
+                &:hover {
+                    color: #191b1d;
+                    font-size: 900;
+                }
             }
             .chosedLi {
                 background: #191b1d;
