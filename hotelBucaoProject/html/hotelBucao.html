@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酒店布草</title>
+    <link rel="stylesheet" href="../css/wuhao/css/hotelBucao.css">
+    <script src='../js/globalJS/jquery-3.2.1.min.js'></script>
+    <script src='../js/globalJS/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="../css/wuhao/css/Pager.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="center clear">
+            <span class='bgSpan'></span>
+            <div class='button'>
+                <span class='span1'></span>
+                <span class='span2'>布草单</span>
+                <span class="span3">+99</span>
+            </div>
+        </div>
+    </div>
+    <div class='bigImg clear'>
+        <img src="../../images/hotelBucao/banner.jpg" alt="">
+    </div>
+    <div class="body">
+        <div class="center clear">
+            <div class="tabs">
+                <div class="tab1 tabstyle " id='tabActive'><span class='spanImg1'></span><span class='spanWord1'>推荐</span></div>
+                <div class="tab2 tabstyle"><span class='spanImg2'></span><span class='spanWord2'>客房布草</span></div>
+                <div class="tab3 tabstyle"><span class='spanImg3'></span><span class='spanWord3'>洗浴布草</span></div>
+                <div class="tab4 tabstyle"><span class='spanImg4'></span><span class='spanWord4'>餐饮布草</span></div>
+                <div class='zulin right '><span class='zlsm'>租赁说明</span><span class='zlsmImg'></span></div>
+            </div>
+            <div class="tabContent">
+                <div class="tabcon1">
+                    <ul class='clear'>
+                        <li class='chosedLi'>全部</li>
+                        <li>被套</li>
+                        <li>床单/床笠</li>
+                        <li>床品套件</li>
+                        <li>床垫/床褥</li>
+                        <li>毯子</li>
+                        <li>抱枕靠垫</li>
+                        <li>枕芯</li>
+                        <li>枕套枕巾</li>
+                        <li>沙发垫套/椅垫</li>
+                        <li>布艺软饰</li>
+                        <li>窗帘/窗纱</li>
+                        <li>地毯地垫</li>
+                        <li>毛巾/浴巾</li>
+                    </ul>
+                </div>
+                <!-- <div class="tabcon2"></div>
+                <div class="tabcon3"></div>
+                <div class="tabcon4"></div> -->
+            </div>
+            <div class="mainInfo clear">
+                <div class="mainLeft">
+                    <div class="mainHead">
+                        <div class="head1"><span>综合排序</span></div>
+                        <div class="head2">
+                            <span>销量</span>
+                            <p class='right clear'>
+                                <span class='upArrow'></span>
+                                <span class='downArrow'></span>
+                            </p>
+                        </div>
+                        <div class="head3 clear">
+                            <span>价格</span>
+                            <p class='right clear'>
+                                <span class='upArrow'></span>
+                                <span class='downArrow'></span>
+                            </p>
+                        </div>
+                        <div class="head4">
+                            <p class='left p1'>共找到&nbsp<span>3265</span>&nbsp个商品</p>
+                            <p class='right p2 clear'>
+                                <span class="span1"></span>
+                                <span class="span2">1</span>
+                                <span class="span3">/</span>
+                                <span class="span4">36</span>
+                                <span class="span5"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="shower">
+                        <div class="good clear">
+                            <div class="goodLeft left">
+                                <img src="../../images/hotelBucao/tu1_03.jpg" alt="">
+                            </div>
+                            <div class="goodRight left">
+                                <p class='goodP1'>
+                                    <span class='rmb'>￥</span>
+                                    <span class="goodPrice">2.1</span>
+                                    <span>/条/天</span>
+                                </p>
+                                <p class='goodP2'>
+                                    <span>水星家纺&nbsp纯棉三/四件套&nbsp夏末之晨全棉斜纹印花床单斜纹印花床单被套床上用品</span>
+                                </p>
+                                <p class='goodP3'>
+                                    利群福兴祥
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class='pages'>
+                        <div id="pager"></div>
+                        <div class='others left'>
+                            <p class='left'><span style='color:#333;'>1</span><span>/36</span></p>
+                            <p class='left'><span>到第</span><input type="text" value='1'><span>页</span></p>
+                            <input type="button" value="确定" class='right'>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mainRight">
+                    <div class="mainHead">
+                        <span></span><span>商品详情</span>
+                    </div>
+                    <div class="addGoods clear">
+                        <div class="middle clear">
+                            <div class="addLeft left clear">
+                                <span class='right'>剩余18116件可售</span>
+                            </div>
+                            <div class="addMid left">
+                                <input type="text" value="-">
+                                <input type="text" value="0">
+                                <input type="text" value="+">
+                            </div>
+                            <div class='addLast left'>加入布草单</div>
+                        </div>
+                    </div>
+                    <div class="goodsInfo"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="foot">
+        <div class="center clear">
+            <div class="foorLeft">
+                <div class="upPart">
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="downPart"></div>
+            </div>
+            <div class="footRight"></div>
+        </div>
+    </div>
+
+
+
+    <script src='../js/globalJS/global.js'></script>
+    <script src='../js/wuhao/hotelBucao.js'></script>
+    <!-- 分页器 -->
+    <script src='../js/globalJS/jquery.pager.js'></script>
+    <script src='../js/globalJS/Pager.js'></script>
+
+</body>
+
+</html>

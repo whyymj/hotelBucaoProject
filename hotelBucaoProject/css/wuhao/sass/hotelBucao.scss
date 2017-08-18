@@ -1,0 +1,442 @@
+@import 'global';
+$bgBlack:#191b1d; //导航栏，页面底部等处的黑背景色
+$bgImgUrl:'../../../images/hotelBucao/jingling.png';
+body {
+    background: #dce1e6; //整个页面的大背景色，淡蓝绿色
+    .center {
+        //使整个页面居中
+        width: 11.99rem;
+        margin: auto;
+        height: 100%;
+        border-left: 1px solid gold;
+        border-right: 1px solid gold;
+    }
+    font-size: 0.18rem;
+}
+
+// 导航栏部分
+.nav {
+    background: $bgBlack;
+    height: 0.88rem;
+    .bgSpan {
+        @include addBgimg($bgImgUrl, -0.23rem, -0.23rem);
+        width: 4.39rem;
+        height: 0.34rem;
+        float: left;
+        margin: 0.28rem 0 0 0.01rem;
+    }
+    .button {
+        margin: 0.23rem 0 0 0;
+        width: 1.64rem;
+        height: 0.38rem;
+        border: 0.02px solid #777366;
+        border-radius: 0.19rem;
+        float: right;
+        span {
+            float: left;
+        }
+        .span1 {
+            width: 0.23rem;
+            height: 0.23rem;
+            @include addBgimg($bgImgUrl, -4.82rem, -1.19rem);
+            margin: 0.07rem 0 0 0.26rem;
+        }
+        .span2 {
+            color: #d1ccbc;
+            font-size: 0.18rem;
+            margin: 0.09rem 0.09rem 0 0.11rem;
+        }
+        .span3 {
+            border-radius: 50%;
+            width: 0.24rem;
+            height: 0.24rem;
+            background: #f00;
+            font-family: 'Arial';
+            color: #fff;
+            font-size: 0.11rem;
+            line-height: 0.24rem;
+            text-align: center;
+            font-weight: 700;
+            margin: 0.07rem 0 0 0;
+        }
+    }
+}
+
+// 大图部分
+.bigImg {
+    img {
+        float: left;
+        width: 100%;
+    }
+    margin:0 0 0.33rem 0;
+}
+
+// 主体部分
+.body {
+    margin: 0 0 1.32rem 0;
+    .tabs {
+        width: 100%;
+        height: 0.43rem;
+        vertical-align: middle;
+        span {
+            float: left;
+        }
+    }
+    .spanImg1 {
+        width: 0.2rem;
+        height: 0.2rem;
+        margin: 0.13rem 0.12rem 0 0.42rem;
+        @include addBgimg($bgImgUrl, -0.26rem, -0.83rem);
+    }
+    .spanImg2 {
+        width: 0.24rem;
+        height: 0.18rem;
+        margin: 0.13rem 0.12rem 0 0.25rem;
+        @include addBgimg($bgImgUrl, -0.89rem, -1.71rem);
+    }
+    .spanImg3 {
+        width: 0.24rem;
+        height: 0.16rem;
+        margin: 0.13rem 0.12rem 0 0.25rem;
+        @include addBgimg($bgImgUrl, -1.54rem, -1.71rem);
+    }
+    .spanImg4 {
+        width: 0.19rem;
+        height: 0.19rem;
+        margin: 0.13rem 0.12rem 0 0.25rem;
+        @include addBgimg($bgImgUrl, -2.21rem, -1.71rem);
+    }
+    .zulin {
+        height: 100%;
+        span {
+            float: left;
+            height: 100%;
+            line-height: 0.43rem;
+            color: #666;
+            font-size: 0.17rem;
+        }
+        .zlsmImg {
+            width: 0.18rem;
+            height: 0.18rem;
+            @include addBgimg($bgImgUrl, -2.89rem, -0.8rem);
+            margin: 0.14rem 0 0 0.09rem;
+        }
+    }
+    .tabstyle {
+        width: 1.6rem;
+        height: 100%;
+        background: #191b1d;
+        float: left;
+        border-right: 1px solid #696a6b;
+        color: #d1ccbc;
+        font-size: 0.2rem;
+        line-height: 0.43rem;
+        text-align: center;
+    }
+    #tabActive {
+        background: #fff;
+        color: #191b1d;
+    }
+    .tabContent {
+        width: 100%;
+        height: 1.28rem;
+        background: #fff;
+        margin: 0 0 0.26rem 0;
+        ul {
+            width: 100%;
+            padding: 0.31rem;
+            li {
+                float: left;
+                font-size: 0.14rem;
+                color: #8d6f4a;
+                margin: 0 0.32rem 0.20rem 0;
+                padding: 0.03rem 0.07rem;
+            }
+            .chosedLi {
+                background: #191b1d;
+                border-radius: 0.03rem;
+                color: #fff;
+            }
+        }
+    }
+    .mainInfo {
+        width: 100%;
+        div {
+            box-sizing: border-box;
+        }
+        .mainLeft,
+        .mainRight {
+            float: left;
+            width: 50%;
+            height: 8.65rem;
+            background: #fff;
+        }
+        .mainHead {
+            background: #fff;
+            border: 1px solid #ccc;
+            height: 0.48rem;
+            width: 100%;
+            div {
+                float: left;
+                height: 100%;
+            }
+            .head1,
+            .head2,
+            .head3 {
+                width: 15%;
+                border-right: 1px solid #ccc;
+                line-height: 0.48rem;
+                text-align: center;
+                font-size: 0.14rem;
+                color: #666;
+            }
+            .head1 {
+                background: #191b1d;
+                color: #f5f5f5;
+            }
+            .head2,
+            .head3 {
+                span {
+                    float: left;
+                    margin: 0 0 0 0.22rem;
+                }
+                p {
+                    width: 0.1rem;
+                    height: 100%;
+                    padding: 0.18rem 0.19rem 0 0;
+                    span {
+                        float: left;
+                        width: 100%;
+                        height: 0.06rem;
+                    }
+                    .upArrow {
+                        margin-left: 0;
+                        margin-bottom: 0.02rem;
+                        @include addBgimg($bgImgUrl, -3.22rem, -1.26rem);
+                    }
+                    .downArrow {
+                        margin-left: 0;
+                        @include addBgimg($bgImgUrl, -2.91rem, -1.33rem);
+                    }
+                }
+            }
+            .head4 {
+                width: 50%;
+                float: right;
+                p {
+                    font-size: 0.14rem;
+                    color: #666;
+                    line-height: 0.48rem;
+                }
+                .p1 {
+                    span {
+                        color: #8d6f4a;
+                        font-family: 'Arial';
+                    }
+                }
+                .p2 {
+                    width: 1rem;
+                    span {
+                        font-family: 'Arial';
+                        float: left;
+                    }
+                    .span1 {
+                        margin: 0.18rem 0.12rem;
+                        width: 0.09rem;
+                        height: 0.14rem;
+                        @include addBgimg($bgImgUrl, -4.1rem, -0.83rem);
+                    }
+                    .span2 {
+                        color: #333;
+                        font-weight: 700;
+                    }
+                    .span3 {
+                        margin: 0 0.03rem;
+                    }
+                    .span5 {
+                        margin: 0.18rem 0.12rem;
+                        width: 0.09rem;
+                        height: 0.14rem;
+                        @include addBgimg($bgImgUrl, -5.45rem, -0.83rem);
+                    }
+                }
+            }
+        }
+        .mainLeft {
+            .shower {
+                overflow-y: scroll;
+                height: 7.51rem;
+                width: 100%;
+                background: #fff;
+                .good {
+                    background: #dce1e6;
+                    width: 100%;
+                    height: 1.49rem;
+                    .goodLeft {
+                        height: 100%;
+                        width: 1rem;
+                        margin: 0 0.18rem 0 0.2rem;
+                        img {
+                            width: 100%;
+                            margin: 0.25rem 0;
+                            border: 1px solid #ccc;
+                        }
+                    }
+                    .goodRight {
+                        height: 100%;
+                        width: 4.15rem;
+                        padding: 0.25rem 0;
+                        .goodP1 {
+                            height: 0.2rem;
+                            .rmb {
+                                font-size: 0.17rem;
+                                color: #f00;
+                                font-weight: 900;
+                            }
+                            .goodPrice {
+                                color: #f00;
+                                font-size: 0.2rem;
+                                font-weight: 900;
+                            }
+                            span {
+                                font-size: 0.14rem;
+                                color: #333;
+                                line-height: 0.2rem;
+                            }
+                        }
+                        .goodP2 {
+                            margin: 0.1rem 0 0.08rem 0;
+                            span {
+                                font-size: 0.14rem;
+                                color: #333;
+                                line-height: 0.2rem;
+                            }
+                        }
+                        .goodP3 {
+                            height: 0.14rem;
+                            line-height: 0.14rem;
+                            font-size: 0.14rem;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+            .pages {
+                height: 0.66rem;
+                border: 1px solid #ccc;
+                #pager {
+                    margin-left: 0.17rem;
+                }
+                .others {
+                    height: 100%;
+                    p {
+                        height: 0.34rem;
+                        margin: 0.05rem 0;
+                        height: 0.34rem;
+                        margin: 0.07rem 0.06rem;
+                        font-size: 0.14rem;
+                        color: #999;
+                        span {
+                            height: 100%;
+                            float: left;
+                            font-family: 'Arial';
+                            margin: 0.19rem 0;
+                        }
+                        input {
+                            float: left;
+                            width: 0.34rem;
+                            height: 0.34rem;
+                            border: 1px solid #dadada;
+                            margin: 0.08rem 0.04rem;
+                            background: #fff;
+                            text-align: center;
+                            line-height: 0.34rem;
+                            font-size: 0.14rem;
+                            font-family: 'Arial';
+                            color: #999;
+                        }
+                    }
+                    input {
+                        background: #ececec;
+                        border: 1px solid #dadada;
+                        width: 0.7rem;
+                        height: 0.34rem;
+                        margin: 0.16rem 0.1rem;
+                    }
+                }
+            }
+        }
+        .mainRight {
+            .mainHead {
+                border-left: 0;
+                span {
+                    float: left;
+                    margin: 0.12rem 0 0 0.1rem;
+                    color: #999;
+                }
+                span:first-child {
+                    margin: 0.15rem 0 0 2.37rem;
+                    width: 0.17rem;
+                    height: 0.21rem;
+                    @include addBgimg($bgImgUrl, -3.52rem, -0.79rem);
+                }
+            }
+            .addGoods {
+                height: 0.68rem;
+                width: 100%;
+                background: #f1f1f1;
+                .middle {
+                    float: left;
+                    height: 0.4rem;
+                    width: 100%;
+                    margin: 0.14rem 0 0 0;
+                    .addLeft {
+                        width: 2.11rem;
+                        margin: 0.08rem 0 0 0;
+                        color: #666;
+                    }
+                    .addMid {
+                        input {
+                            float: left;
+                            border-top: 1px solid #ccc;
+                            border-bottom: 1px solid #ccc;
+                            text-align: center;
+                            line-height: 0.38rem;
+                            box-sizing: border-box;
+                            font-family: 'Arial';
+                            font-size: 0.14rem;
+                            color: #333;
+                            width: 0.65rem;
+                        }
+                        input:first-child,
+                        input:last-child {
+                            width: 0.38rem;
+                            border: 1px solid #ccc;
+                            color: #666;
+                            font-size: 0.18rem;
+                        }
+                    }
+                    .addLast {
+                        width: 1.6rem;
+                        background: #8d6f4a;
+                        color: #fff;
+                        line-height: 0.4rem;
+                        font-size: 0.18rem;
+                        text-align: center;
+                        border-radius: 1px;
+                        height: 0.4rem;
+                    }
+                }
+            }
+            .goodsInfo {
+                height: 7.49rem;
+            }
+        }
+    }
+}
+
+// 页面底部
+.foot {
+    height: 3.12rem;
+    background: $bgBlack;
+}

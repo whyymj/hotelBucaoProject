@@ -1,0 +1,86 @@
+/**初始化元素**/
+
+div,
+a,
+p,
+i,
+body,
+html,
+img,
+span,
+ul,
+li,
+table,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+select,
+video,
+option {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'microsoft yahei';
+}
+
+li {
+    list-style: none;
+}
+
+
+/**背景图设置方法*/
+
+@mixin addBgimg($url, $x, $y) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: $x $y;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+
+/**这里是设置rem的地方*/
+
+html {
+    font-size: 100px;
+}
+
+
+/**清除浮动
+*/
+
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+
+/**左浮动*/
+
+.left {
+    float: left;
+}
+
+
+/**右浮动*/
+
+.right {
+    float: right
+}

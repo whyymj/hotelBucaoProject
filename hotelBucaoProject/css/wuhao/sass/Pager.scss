@@ -1,0 +1,55 @@
+#pager ul.pages {
+    display: block;
+    border: none;
+    font-size: 0.14rem;
+    margin: 0.1rem 0 0.5rem;
+    padding: 0;
+}
+
+#pager {
+    float: left;
+    width: 3.4rem;
+}
+
+#pager li {
+    width: 0.34rem;
+}
+
+#pager ul.pages li {
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    margin-top: 0.05rem;
+    line-height: 0.34rem;
+    text-align: center;
+}
+
+#pager ul.pages li.pgEmpty {
+    border: 1px solid #eee;
+    color: #999;
+}
+
+#pager ul.pages li.pgCurrent {
+    color: #000;
+    font-weight: 700;
+}
+
+#pager .page-number {
+    color: #999;
+}
+
+#pager li:first-child {
+    display: none;
+}
+
+#pager li:last-child {
+    display: none;
+}
+
+#pager .pgNext {
+    border: 1px solid #dedede;
+    width: 0.7rem;
+    height: 0.34rem;
+    color: #999;
+    margin: 0 0.05rem;
+}
