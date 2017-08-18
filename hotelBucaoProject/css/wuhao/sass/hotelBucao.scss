@@ -24,6 +24,7 @@ body {
         margin: 0.28rem 0 0 0.01rem;
     }
     .button {
+        cursor: pointer;
         margin: 0.23rem 0 0 0;
         width: 1.64rem;
         height: 0.38rem;
@@ -57,6 +58,18 @@ body {
             font-weight: 700;
             margin: 0.07rem 0 0 0;
         }
+        &:hover {
+            border: 0.02px solid #fff;
+            span {
+                color: #fff;
+            }
+            .span1 {
+                width: 0.23rem;
+                height: 0.23rem;
+                @include addBgimg($bgImgUrl, -5.31rem, -1.19rem);
+                margin: 0.07rem 0 0 0.26rem;
+            }
+        }
     }
 }
 
@@ -84,6 +97,17 @@ body {
         width: 0.2rem;
         height: 0.2rem;
         margin: 0.13rem 0.12rem 0 0.42rem;
+        @include addBgimg($bgImgUrl, -0.26rem, -1.71rem);
+    }
+    .tab1:hover {
+        .spanImg1 {
+            @include addBgimg($bgImgUrl, -0.25rem, -1.27rem);
+        }
+    }
+    .spanImg1Click {
+        width: 0.2rem;
+        height: 0.2rem;
+        margin: 0.13rem 0.12rem 0 0.42rem;
         @include addBgimg($bgImgUrl, -0.26rem, -0.83rem);
     }
     .spanImg2 {
@@ -92,17 +116,50 @@ body {
         margin: 0.13rem 0.12rem 0 0.25rem;
         @include addBgimg($bgImgUrl, -0.89rem, -1.71rem);
     }
+    .tab2:hover {
+        .spanImg2 {
+            @include addBgimg($bgImgUrl, -0.88rem, -1.27rem);
+        }
+    }
+    .spanImg2Click {
+        width: 0.24rem;
+        height: 0.18rem;
+        margin: 0.13rem 0.12rem 0 0.25rem;
+        @include addBgimg($bgImgUrl, -0.89rem, -0.83rem);
+    }
     .spanImg3 {
         width: 0.24rem;
         height: 0.16rem;
         margin: 0.13rem 0.12rem 0 0.25rem;
-        @include addBgimg($bgImgUrl, -1.54rem, -1.71rem);
+        @include addBgimg($bgImgUrl, -1.53rem, -1.27rem);
+    }
+    .tab3:hover {
+        .spanImg3 {
+            @include addBgimg($bgImgUrl, -1.54rem, -1.71rem);
+        }
+    }
+    .spanImg3Click {
+        width: 0.24rem;
+        height: 0.16rem;
+        margin: 0.13rem 0.12rem 0 0.25rem;
+        @include addBgimg($bgImgUrl, -1.54rem, -0.83rem);
     }
     .spanImg4 {
         width: 0.19rem;
         height: 0.19rem;
         margin: 0.13rem 0.12rem 0 0.25rem;
         @include addBgimg($bgImgUrl, -2.21rem, -1.71rem);
+    }
+    .tab4:hover {
+        .spanImg4 {
+            @include addBgimg($bgImgUrl, -2.20rem, -1.27rem);
+        }
+    }
+    .spanImg4Click {
+        width: 0.19rem;
+        height: 0.19rem;
+        margin: 0.13rem 0.12rem 0 0.25rem;
+        @include addBgimg($bgImgUrl, -2.21rem, -0.83rem);
     }
     .zulin {
         height: 100%;
@@ -121,6 +178,7 @@ body {
         }
     }
     .tabstyle {
+        cursor: pointer;
         width: 1.6rem;
         height: 100%;
         background: #191b1d;
@@ -130,6 +188,9 @@ body {
         font-size: 0.2rem;
         line-height: 0.43rem;
         text-align: center;
+        &:hover {
+            color: #fff;
+        }
     }
     #tabActive {
         background: #fff;
