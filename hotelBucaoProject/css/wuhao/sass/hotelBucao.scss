@@ -8,8 +8,6 @@ body {
         width: 11.99rem;
         margin: auto;
         height: 100%;
-        border-left: 1px solid gold;
-        border-right: 1px solid gold;
     }
     font-size: 0.18rem;
 }
@@ -396,6 +394,9 @@ body {
                         color: #666;
                     }
                     .addMid {
+                        margin: 0 0.26rem 0 0.2rem;
+                        border-radius: 1px;
+                        overflow: hidden;
                         input {
                             float: left;
                             border-top: 1px solid #ccc;
@@ -407,6 +408,7 @@ body {
                             font-size: 0.14rem;
                             color: #333;
                             width: 0.65rem;
+                            background: #f1f1f1;
                         }
                         input:first-child,
                         input:last-child {
@@ -429,7 +431,113 @@ body {
                 }
             }
             .goodsInfo {
-                height: 7.49rem;
+                height: 7.48rem;
+                overflow-y: auto;
+                .goodsInfoCenter {
+                    width: 5.65rem;
+                    margin: auto;
+                    div {
+                        float: left;
+                        width: 100%;
+                    }
+                    .floor1 {
+                        color: #333;
+                        font-size: 0.17rem;
+                        font-weight: 700;
+                        height: 0.59rem;
+                        margin: 0.13rem 0 0 0;
+                        line-height: 0.59rem;
+                    }
+                    .floor2 {
+                        height: 0.37rem;
+                        padding: 0.09rem 0 0 0;
+                        span {
+                            float: left;
+                        }
+                        .span1,
+                        .span11 {
+                            color: #f00;
+                            font-size: 0.2rem;
+                            font-weight: 700;
+                        }
+                        .spa11 {
+                            font-family: 'Arial';
+                        }
+                        .span2 {
+                            color: #333;
+                            font-size: 0.14rem;
+                            margin: 0.04rem 0.34rem 0 0;
+                        }
+                        .span3 {
+                            width: 0.17rem;
+                            height: 0.19rem;
+                            margin: 0.04rem 0.05rem 0 0;
+                            @include addBgimg($bgImgUrl, -3.65rem, -1.25rem);
+                        }
+                        .span4 {
+                            font-size: 0.14rem;
+                            color: #423892;
+                            margin: 0.04rem 0.31rem 0 0;
+                        }
+                        .span5 {
+                            margin: 0.04rem 0.04rem 0 0;
+                            width: 0.18rem;
+                            height: 0.18rem;
+                            @include addBgimg($bgImgUrl, -4.11rem, -1.26rem);
+                        }
+                        .span6 {
+                            margin: 0.04rem 0 0 0;
+                            font-size: 0.14rem;
+                            color: #ab6a1d;
+                        }
+                    }
+                    .floor3 {
+                        height: 0.32rem;
+                        span {
+                            font-size: 0.14rem;
+                            color: #5a5a5a;
+                            line-height: 0.32ren;
+                            float: left;
+                            margin: 0.09rem 0.2rem 0 0;
+                        }
+                    }
+                    .floor4 {
+                        height: 0.5rem;
+                        margin: 0 0 0.31rem 0;
+                        line-height: 0.5rem;
+                        color: #666;
+                        font-size: 0.14rem;
+                    }
+                    .floor5,
+                    .floor6,
+                    .floor7,
+                    .floor8,
+                    .floor9,
+                    .floor10 {
+                        height: 0.3rem;
+                        line-height: 0.3rem;
+                        color: #666;
+                        font-size: 0.14rem;
+                        ul {
+                            width: 100%;
+                            height: 100%;
+                            li {
+                                height: 100%;
+                                width: 25%;
+                                float: left;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    .floor11 {
+                        img {
+                            width: 100%;
+                            float: left;
+                        }
+                    }
+                }
             }
         }
     }
@@ -439,4 +547,77 @@ body {
 .foot {
     height: 3.12rem;
     background: $bgBlack;
+    .position {
+        position: relative;
+        width: 11.70rem;
+        height: 100%;
+        .up {
+            height: 1.5rem;
+            width: 100%;
+            margin: 0.34rem 0 0.2rem 0;
+            ul {
+                width: 10.14rem;
+                height: 100%;
+                li {
+                    float: left;
+                    width: 25%;
+                    height: 100%;
+                    p {
+                        color: #d1ccbc;
+                        font-size: 0.14rem;
+                        height: 0.3rem;
+                        line-height: 0.3rem;
+                    }
+                }
+            }
+            h6 {
+                font-size: 0.18rem;
+                color: #d1ccbc;
+                height: 0.44rem;
+                line-height: 0.44rem;
+            }
+            div {
+                width: 0.98rem;
+                position: absolute;
+                top: 0.34rem;
+                right: 0.28rem;
+                img {
+                    width: 100%;
+                    margin: 0.08rem 0;
+                }
+                p {
+                    color: #d1ccbc;
+                    font-size: 0.14rem;
+                }
+            }
+        }
+        .down {
+            width: 8.6rem;
+            border-top: 1px solid #d1ccbc;
+            padding-top: 0.19rem;
+            ul {
+                height: 0.16rem;
+                width: 100%;
+                margin: 0 0 0.16rem 0;
+                li {
+                    height: 100%;
+                    float: left;
+                    padding: 0 0.11rem 0 0;
+                    border-right: 1px solid #afab9e;
+                    margin: 0 0.11rem 0 0;
+                    color: #afab9e;
+                    font-size: 0.14rem;
+                    line-height: 0.16rem;
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+            p {
+                font-size: 0.14rem;
+                color: #afab9e;
+                line-height: 0.14rem;
+            }
+        }
+    }
 }
